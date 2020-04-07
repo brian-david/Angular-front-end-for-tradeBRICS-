@@ -1,0 +1,21 @@
+@import '~@angular/material/theming';
+.clickable {
+  cursor: pointer;
+  &:hover {
+    @include mat-elevation(8);
+  }
+}
+
+div{
+  display: flex;
+  justify-content: space-around;
+}
+
+div.container{
+  display: flex;
+}
+
+mat-card{
+  display: flex;
+  flex: 1;
+}
