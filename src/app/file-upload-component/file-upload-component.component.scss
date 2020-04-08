@@ -1,14 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import '~@angular/material/theming';
 .clickable {
   cursor: pointer;
   &:hover {
     @include mat-elevation(8);
   }
+
+}
+
+mat-icon{
+  margin-left: 12rem;
+}
+
+button{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  color: grey;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 430px;
 }
 
 div{
   display: flex;
-  justify-content: space-around;
+  //justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
 }
 
 div.container{
@@ -18,4 +38,11 @@ div.container{
 mat-card{
   display: flex;
   flex: 1;
+}
+
+#image{
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  background-color:#e6e6e4;
 }

@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { FileUploadComponentComponent } from './file-upload-component/file-upload-component.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { CustomInputComponentComponent } from './custom-input-component/custom-input-component.component';
 import { RegisterBusinessComponentComponent } from './register-business-component/register-business-component.component';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -15,13 +14,13 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterBusinessComponentComponent,
     FileUploadComponentComponent,
-    CustomInputComponentComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +31,8 @@ import { MatCardModule } from '@angular/material/card';
     MatInputModule,
     MatSelectModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
