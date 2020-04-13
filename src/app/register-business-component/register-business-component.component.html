@@ -1,146 +1,79 @@
-<div class="container">
-  <button class="navButton" mat-button><mat-icon class="in-btn-icon">keyboard_backspace</mat-icon><span></span>Back</button>
-  <div class="formContainer">
-    <div class="form">
-      <h1>Register your business</h1>
-      <h2>Lets get started</h2>
-
-      <app-file-upload-component></app-file-upload-component>
-
-      <p class="section-title">General Infromation</p>
-
-      <div class="input-row">
-        <div class="input-group">
-          <label required class="inputLabel">Business Name</label>
-          <input matInput class="input" placeholder="Business Name"/>
-        </div>
-        <div class="input-group">
-          <label class="inputLabel">Legal business name</label>
-          <input matInput class="input" placeholder="Legal business name"/>
-        </div>
-      </div>
-      <div class="input-row">
-        <div class="input-group">
-          <label class="inputLabel">Business country</label>
-          <input matInput class="input" placeholder="Business country"/>
-        </div>
-        <div class="input-group">
-          <label class="inputLabel">Business entity</label>
-          <input matInput class="input" placeholder="Business entity"/>
-        </div>
-      </div>
-      <div class="input-row">
-        <div class="input-group">
-          <label class="inputLabel">Business registration</label>
-          <input matInput class="input" placeholder="Business registration"/>
-        </div>
-        <div class="input-group">
-          <label class="inputLabel">Business VAT</label>
-          <input matInput class="input" placeholder="Business VAT"/>
-        </div>
-      </div>
-        <label class="inputLabel input-title">Legal business name</label>
-        <textarea rows="10"></textarea>
-        <!--
+<div fxLayout="row">
+  <div fxFlex></div>
+  <!-- CONTAINTER -->
+  <div class="form-container" fxFlex="60">
+    <!-- ROW 1-->
+    <div fxLayoutGap="3rem">
+      <div fxFlex class="form-group">
+        <label for="one">ONE:</label>
         <mat-form-field appearance="outline">
-          <mat-label>Outline form field</mat-label>
-          <input matInput placeholder="Placeholder">
-          <mat-hint>Hint</mat-hint>
+          <input matInput placeholder="ONE" />
         </mat-form-field>
-        -->
-        <p class="section-title">Contact Information</p>
-        <div class="input-row">
-          <div class="input-group">
-            <label required class="inputLabel">Business email</label>
-            <input matInput class="input" placeholder="Business Name"/>
-          </div>
-          <div class="input-group">
-            <label class="inputLabel">Telephone</label>
-            <div class="input-row">
-              <input class="input-phone-code" placeholder="+27"/>
-              <input class="input-phone-num" placeholder="000 000 0000"/>
-            </div>
-          </div>
-        </div>
-
-        <p class="section-title">Physical address</p>
-        <div class="input-row">
-          <div class="input-group">
-            <label required class="inputLabel">City</label>
-            <input matInput class="input" placeholder="Select a City"/>
-          </div>
-          <div class="input-group">
-            <label class="inputLabel">Suburb</label>
-            <input matInput class="input" placeholder="Select a suburb"/>
-          </div>
-        </div>
-        <div class="input-row">
-          <div class="input-group">
-            <label required class="inputLabel">Street address</label>
-            <input matInput class="input" placeholder="Street address"/>
-          </div>
-          <div class="input-group">
-            <label class="inputLabel">Apt / Suite / Other</label>
-            <input matInput class="input" placeholder="Apt / Suite / Other"/>
-          </div>
-        </div>
-        <div class="input-row">
-          <div class="input-group">
-            <label required class="inputLabel">Postal / Zip Code</label>
-            <input matInput class="input" placeholder="Postal / Zip Code"/>
-          </div>
-        </div>
-
-         <div class="input-row">
-          <button mat-stroked-button color="warn">Cancel</button>
-          <button mat-flat-button disabled>Confirm</button>
-        </div>
+      </div>
+      <div fxFlex class="form-group">
+        <label for="one">ONE:</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="ONE" />
+        </mat-form-field>
+      </div>
     </div>
+    <!-- END OF ROW 1-->
 
+    <!-- ROW 2 -->
+    <div fxLayoutGap="3rem">
+      <div fxFlex class="form-group">
+        <label for="one">ONE:</label>
+        <mat-form-field appearance="outline">
+          <select matNativeControl required>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </mat-form-field>
+      </div>
+      <div fxFlex class="form-group">
+        <label for="one">ONE:</label>
+        <mat-form-field appearance="outline">
+          <select matNativeControl required>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </mat-form-field>
+      </div>
+    </div>
+    <!-- END OF ROW 2 -->
 
+    <!-- ROW 3-->
+    <div fxLayoutGap="3rem">
+      <div fxFlex class="form-group">
+        <label for="one">ONE:</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="ONE" />
+        </mat-form-field>
+      </div>
+      <div fxFlex class="form-group">
+        <label for="one">ONE:</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="ONE" />
+        </mat-form-field>
+      </div>
+    </div>
+    <!-- END OF ROW 3-->
+
+    <!-- ROW 4-->
+    <div>
+      <div fxFlex class="form-group">
+        <label for="one">ONE:</label>
+        <mat-form-field appearance="outline">
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
+      </div>
+    </div>
+    <!-- END OF ROW 4-->
   </div>
-  <!--
-
-  <h1 class="mat-h1">Register your business</h1>
-
-  <h2 class="mat-h2">Lets get started</h2>
-  <app-file-upload-component></app-file-upload-component>
-  <h1 class="mat-h3">General Information</h1>
-  <div class="container2">
-    <div class="input-container">
-      <label class="inputLabel" for="input">Business Name</label>
-      <input matInput class="input" placeholder="this is the place holder"/>
-    </div>
-    <div class="input-container">
-      <label class="inputLabel input-title" for="input">Legal business name</label>
-      <input matInput class="input" placeholder="this is the place holder"/>
-    </div>
-    <div class="input-container">
-      <label class="inputLabel" for="input">Business country</label>
-      <input matInput class="input" placeholder="this is the place holder"/>
-    </div>
-    <div class="input-container">
-      <label class="inputLabel" for="input">Business entity</label>
-      <input matInput class="input" placeholder="this is the place holder"/>
-    </div>
-    <div class="input-container">
-      <label class="inputLabel" for="input">Business registration</label>
-      <input matInput class="input" placeholder="this is the place holder"/>
-    </div>
-    <div class="input-container">
-      <label class="inputLabel" for="input">Business VAT</label>
-      <input matInput class="input" placeholder="this is the place holder"/>
-    </div>
-  </div>
-
-  <h1>Contact Information</h1>
-
-  <h1>Physical address</h1>
-
-  <div class="tools">
-    <button mat-stroked-button color="warn">Canel</button>
-    <button mat-stroked-button disabled>Confirm</button>
-  </div>
--->
-
+  <!-- END OF CONTAINER -->
+  <div fxFlex></div>
 </div>
