@@ -4,6 +4,7 @@
     fxLayout="column"
     fxFlex
     fxLayoutAlign="start center"
+    fxHide.xs
   >
     <button mat-button>
       <mat-icon>arrow_back</mat-icon>
@@ -11,12 +12,21 @@
     </button>
   </div>
   <!-- CONTAINTER -->
-  <div class="form-container" fxFlex="50">
+  <div
+    [ngStyle.lt-sm]="{ padding: '2rem' }"
+    class="form-container"
+    fxFlex.gt-sm="50"
+    fxFlex.ls-xs="80"
+    fxLayoutAlign.ls-xs="center center"
+  >
     <p class="page-tile">Register your business</p>
     <p class="page-substitle">Lets get started</p>
+
+    <app-file-upload-component></app-file-upload-component>
+
     <h1 class="section-title">General Information</h1>
     <!-- ROW 1-->
-    <div fxLayoutGap="3rem">
+    <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutGap.gt-sm="3rem">
       <div fxFlex class="form-group">
         <label class="input-label" for="bus_name">Business name</label>
         <mat-form-field appearance="outline">
@@ -44,7 +54,7 @@
     <!-- END OF ROW 1-->
 
     <!-- ROW 2 -->
-    <div fxLayoutGap="3rem">
+    <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutGap.gt-sm="3rem">
       <div fxFlex class="form-group">
         <mat-label class="input-label">Business coutry</mat-label>
         <mat-form-field appearance="outline">
@@ -63,7 +73,7 @@
     <!-- END OF ROW 2 -->
 
     <!-- ROW 3-->
-    <div fxLayoutGap="3rem">
+    <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutGap.gt-sm="3rem">
       <div fxFlex class="form-group">
         <label class="input-label" for="one">Business registration</label>
         <mat-form-field appearance="outline">
@@ -86,13 +96,94 @@
       <div fxFlex class="form-group">
         <label class="input-label" for="one">Business overview</label>
         <mat-form-field appearance="outline">
-          <textarea matInput placeholder="What do you do?"></textarea>
+          <textarea rows="10" matInput placeholder="What do you do?"></textarea>
           <mat-hint>Use 20 or more characters</mat-hint>
         </mat-form-field>
       </div>
     </div>
     <!-- END OF ROW 4-->
+    <!--------------------------------------------------------------------------------------------------------- -->
+    <h1 class="section-title">Contact information</h1>
+    <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutGap.gt-sm="3rem">
+      <div fxFlex="48" fxFlex.lt-sm="100" class="form-group">
+        <label class="input-label" for="one">Business email</label>
+        <mat-form-field appearance="outline">
+          <mat-label>Number</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+      <div fxFlex="46" fxFlex.ls-sm="100" fxLayout="column">
+        <label class="input-label" for="one">Telephone</label>
+        <div
+          fxFlex
+          fxLayout="row"
+          fxLayoutAlign="space-between center"
+          class="form-group"
+        >
+          <mat-form-field fxFlex="30" appearance="outline">
+            <mat-label>Number</mat-label>
+            <input matInput />
+          </mat-form-field>
+          <mat-form-field fxFlex="65" appearance="outline">
+            <mat-label>Number</mat-label>
+            <input matInput />
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------- -->
+    <div>
+      <h1 class="section-title">Physical address</h1>
+    </div>
+    <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutGap.gt-sm="3rem">
+      <div fxFlex class="form-group">
+        <label class="input-label" for="one">City</label>
+        <mat-form-field appearance="outline">
+          <mat-label>Number</mat-label>
+          <input matInput />
+        </mat-form-field>
+      </div>
+      <div fxFlex class="form-group">
+        <label class="input-label" for="one">Suburb</label>
+        <mat-form-field appearance="outline">
+          <mat-label>Suburb</mat-label>
+          <select matNativeControl required placeholder="Suburb"></select>
+        </mat-form-field>
+      </div>
+    </div>
+    <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutGap.gt-sm="3rem">
+      <div fxFlex class="form-group">
+        <label class="input-label" for="one">Street Address</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Street Address" />
+        </mat-form-field>
+      </div>
+      <div fxFlex class="form-group">
+        <label class="input-label" for="one">Apt / Suite / Other </label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Apt / Suite / Other" />
+        </mat-form-field>
+      </div>
+    </div>
+    <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutGap.gt-sm="3rem">
+      <div fxFlex class="form-group">
+        <label class="input-label" for="one">Postal / Zip Code</label>
+        <mat-form-field appearance="outline">
+          <input matInput placeholder="Postal / Zip Code" />
+        </mat-form-field>
+      </div>
+      <div fxFlex class="form-group"></div>
+    </div>
+
+    <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutGap.gt-sm="3rem">
+      <button fxFlex mat-stroked-button color="warn">Cancel</button>
+      <button fxFlex mat-flat-button disabled>Confirm</button>
+    </div>
+
+    <!--------------------------------------------------------------------------------------------------------- -->
   </div>
   <!-- END OF CONTAINER -->
+
   <div fxFlex></div>
 </div>

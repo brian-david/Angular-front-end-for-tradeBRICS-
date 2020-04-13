@@ -1,8 +1,29 @@
-<div class="row-container">
-  <button mat-raised-button>
-    A logo helps personalize your account<mat-icon>camera_alt</mat-icon>
-  </button>
-  <div id="image">
-    <!-- <mat-icon>image</mat-icon> -->
+<div
+  fxLayout="row"
+  fxLayout.lt-sm="column"
+  fxLayoutAlign.lt-sm="start start"
+  fxLayoutAlign.lt-lg="space-between center"
+  fxLayoutAlign.gt-md="start center"
+  fxLayoutGap.lt-md="10"
+>
+  <div fxLayout="column">
+    <mat-label class="input-label">Image or Logo</mat-label>
+    <button mat-raised-button>
+      <div
+        class="label-text"
+        fxLayout="row"
+        fxLayoutAlign="space-between center"
+      >
+        A logo helps personalize your account
+        <mat-icon>camera_alt</mat-icon>
+      </div>
+    </button>
   </div>
+  <img
+    fxFlexOffset="10"
+    class="img-logo"
+    src="../../assets/placeholder-square.jpg"
+    height="125"
+    width="125"
+  />
 </div>
