@@ -1,3 +1,10 @@
+# BARRY
+
+select menus
+fixed/hardcoded element sizes
+resources, such as company logo and south african flag
+misalignment of upload image icon
+
 # TradeBRICS
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
