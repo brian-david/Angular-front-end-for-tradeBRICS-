@@ -42,3 +42,18 @@ textarea {
 div.mat-form-field-outline-start {
   border-radius: 2px !important;
 }
+
+.flex-grid {
+  display: flex;
+}
+.flex-grid .col {
+  flex: 1;
+}
+
+div.row-container > div {
+  flex: 1 1 5em;
+  margin-left: 10px;
+  height: 50px;
+  background-color: blue;
+  border: thick;
+}

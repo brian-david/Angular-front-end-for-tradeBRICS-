@@ -104,29 +104,29 @@
     <!-- END OF ROW 4-->
     <!--------------------------------------------------------------------------------------------------------- -->
     <h1 class="section-title">Contact information</h1>
-    <div fxLayout.gt-sm="row" fxLayout.lt-sm="column" fxLayoutGap.gt-sm="3rem">
-      <div fxFlex="48" fxFlex.lt-sm="100" class="form-group">
+
+    <div
+      fxLayout.gt-sm="row"
+      fxLayout.lt-sm="column"
+      fxLayoutAlign="space-between center"
+    >
+      <div fxFlex="50" fxFlex.lt-sm="100" fxLayout="column">
         <label class="input-label" for="one">Business email</label>
         <mat-form-field appearance="outline">
-          <mat-label>Number</mat-label>
+          <mat-label>Business email</mat-label>
           <input matInput />
         </mat-form-field>
       </div>
-      <div fxFlex="46" fxFlex.ls-sm="100" fxLayout="column">
+
+      <div fxFlex="50" fxFlex.ls-sm="100" fxLayout="column">
         <label class="input-label" for="one">Telephone</label>
-        <div
-          fxFlex
-          fxLayout="row"
-          fxLayoutAlign="space-between center"
-          class="form-group"
-        >
-          <mat-form-field fxFlex="30" appearance="outline">
+        <div fxLayout="row">
+          <mat-form-field fxFlex="40" appearance="outline">
             <mat-label>Number</mat-label>
             <input matInput />
           </mat-form-field>
-          <mat-form-field fxFlex="65" appearance="outline">
-            <mat-label>Number</mat-label>
-            <input matInput />
+          <mat-form-field fxFlex="40" appearance="outline">
+            <input matInput placeholder="000 000 00000" />
           </mat-form-field>
         </div>
       </div>
