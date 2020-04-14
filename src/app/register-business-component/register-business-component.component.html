@@ -107,10 +107,11 @@
 
     <div
       fxLayout.gt-sm="row"
-      fxLayout.lt-sm="column"
-      fxLayoutAlign="space-between center"
+      fxLayout.lt-md="column"
+      fxLayoutAlign.gt-sm="space-between center"
+      fxLayoutGap.gt-sm="3rem"
     >
-      <div fxFlex="50" fxFlex.lt-sm="100" fxLayout="column">
+      <div fxFlex fxFlex.lt-md="100" fxLayout="column">
         <label class="input-label" for="one">Business email</label>
         <mat-form-field appearance="outline">
           <mat-label>Business email</mat-label>
@@ -118,15 +119,14 @@
         </mat-form-field>
       </div>
 
-      <div fxFlex="50" fxFlex.ls-sm="100" fxLayout="column">
+      <div fxFlex="46" fxFlex.ls-sm="100" fxLayout="column">
         <label class="input-label" for="one">Telephone</label>
-        <div fxLayout="row">
-          <mat-form-field fxFlex="40" appearance="outline">
-            <mat-label>Number</mat-label>
-            <input matInput />
+        <div fxFlexLayout="row wrap" fxLayoutGap="1rem">
+          <mat-form-field fxFlex="25" appearance="outline">
+            <input matInput placeholder="+27" />
           </mat-form-field>
-          <mat-form-field fxFlex="40" appearance="outline">
-            <input matInput placeholder="000 000 00000" />
+          <mat-form-field fxFlex="70" appearance="outline">
+            <input matInput placeholder="+27" />
           </mat-form-field>
         </div>
       </div>
